@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title> Timer </title>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+  <link rel="stylesheet" href="timer.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="outer-box">
+
+
+
+      <div class="dropdown-wrapper">
+        <label class="dropdown-label" for="mins"> Choose the time </label>
+        <select name="time" class="dropdown">
+          <option value="01"> 1 min</option>
+          <option value="02"> 2 mins</option>
+          <option value="05"> 5 mins</option>
+          <option value="10"> 10 mins</option>
+          <option value="30"> 30 mins</option>
+        </select>
+      </div>
+      <div class="controls">
+        <div class="display">
+          <span id="min"> 00</span> <span> :</span> <span id="sec"> 00</span>
+        </div>
+        <div class="buttons">
+          <button onclick="start()" class="button">Start </button>
+          <button onclick="reset()" class="button">Reset </button>
+          <button onclick="pause()" class="button">Pause </button>
+          <button onclick="start()" class="button">Resume </button>
+
+        </div>
+      </div>
+    </div>
+    <script src="timer.js"></script>
+
+</body>
+
+</html>
